@@ -1,11 +1,17 @@
 {
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "production": "NODE_ENV=production npm run build"
   },
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "@11ty/eleventy-plugin-rss": "^2.0.4"
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "cssnano": "^7.1.3",
+    "html-minifier-next": "^4.19.1",
+    "postcss": "^8.5.8",
+    "sass": "^1.97.1"
   }
 }
