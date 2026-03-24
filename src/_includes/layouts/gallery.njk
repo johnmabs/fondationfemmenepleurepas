@@ -1,0 +1,13 @@
+{% extends "layouts/base.njk" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+  <article>
+    {% include "partials/page-header.njk" %}
+  </article>
+  <div class="[ panel dot-shadow ] [ bg-tertiary-glare ]">
+    <div class="wrapper"></div>
+  </div>
+{% endblock %}

@@ -1,5 +1,6 @@
 ---
 title: "Fondation Femme Ne Pleure Pas"
+metaDesc: "La Fondation Femme Ne Pleure Pas est une association caritative au Congo qui accompagne orphelins, jeunes femmes et personnes vulnérables vers l’autonomie et la dignité. Découvrez nos ignitiatives pour un avenir meilleur."
 layout: "layouts/home.njk"
 hero:
   heading: "Redonner espoir aux femmes et aux enfants vulnérables."
