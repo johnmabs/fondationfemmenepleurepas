@@ -12,5 +12,3 @@ hero:
       url: "#"
       type: "outline"
 ---
-
-This is pretty _rad_, right?
