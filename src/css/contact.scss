@@ -1,0 +1,98 @@
+// First up: config and functions
+@import 'config';
+
+// Set Gorko to output no CSS for this file
+$generate-utility-classes: false;
+
+// Next: pull in gorko for design tokens
+@import '../../node_modules/gorko/gorko.scss';
+
+.contact-hero {
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-info {
+  --gutter: 2rem;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 30px;
+}
+
+.contact-info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  max-width: 780px;
+  padding: 40px;
+  margin-inline: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: get-color('quinary-shade');
+}
+
+button {
+  background: get-color('secondary-shade');
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: get-color('quinary-shade');
+}
+
+.map-container {
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+
+  display: block;
+}
+
+// Import utilities
+@import 'utilities/grid';

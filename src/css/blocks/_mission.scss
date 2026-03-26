@@ -1,0 +1,33 @@
+.mission {
+
+  --gutter: #{get-size('600')};
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    /*  align-items: center; */
+    gap: 1.5rem;
+
+    border-top: 2px solid get-color('dark-glare');
+    border-bottom: 2px solid get-color('dark-glare');
+    padding-block: 1rem;
+    padding-inline: 1rem;
+
+    @include media-query('md') {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__block {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    i {
+      font-size: get-size('500');
+      ;
+    }
+  }
+}

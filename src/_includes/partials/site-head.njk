@@ -3,9 +3,10 @@
   <div class="wrapper">
     <div class="site-head__inner">
       <a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
-        <img src="/images/logo-femme-ne-pleure-pas.png" alt="">
+        <img class="height-auto" src="/images/logo-femme-ne-pleure-pas.png" alt="">
+        <span>Unité-Amour-Soutien</span>
       </a>
-      <nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Primary">
+      <nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Primary" id="navLinks">
         <ul class="nav__list">
           {% for item in navigation.items %}
             <li>
@@ -15,7 +16,18 @@
             </li>
           {% endfor %}
         </ul>
+
+        <div class="cluster">
+          <a href="#" class="button">Faire un don</a>
+          <a href="/contact/" class="button" data-variant='ghost'>Devenir bénévole</a>
+        </div>
       </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 </header>

@@ -1,0 +1,69 @@
+.site-head {
+  position: relative;
+  padding: 0.5rem 0;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-inline-end: get-size('600'); // Prevents nav bunching up to the logo
+    align-items: center;
+    justify-content: center;
+
+    // Optical adjustment to account for the offset the sunken 3s create
+    transform: translateY(0.25rem);
+
+    img {
+      /* width: 100px; */
+      width: 60px;
+      height: auto;
+    }
+
+    >span {
+      @include apply-utility('font', 'sans');
+      font-weight: 700;
+      font-size: get-size('300');
+    }
+  }
+
+  &__nav {
+    padding: get-size('200') 0;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: get-color('secondary');
+    margin: 4px 0;
+    display: block;
+  }
+
+  @include media-query('md') {
+    &__brand {
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }
+}

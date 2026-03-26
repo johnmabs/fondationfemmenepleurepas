@@ -1,13 +1,59 @@
 {% extends "layouts/base.njk" %}
+{% set pageCriticalStyles = ['gallery.scss'] %}
 
 {% set pageHeaderTitle = title %}
 {% set pageHeaderSummary = content %}
 
 {% block content %}
-  <article>
-    {% include "partials/page-header.njk" %}
+  <article class="section bg-light-glare">
+    <div class="wrapper flow">
+      <h1 class="text-800 text-center">Notre galerie</h1>
+      <p class="text-500 text-center">
+        Découvrez en images les actions de notre association caritative : solidarité, engagement et impact concret au cœur de nos projets.
+      </p>
+    </div>
   </article>
-  <div class="[ panel dot-shadow ] [ bg-tertiary-glare ]">
-    <div class="wrapper"></div>
+
+  <div class="[ panel dot-shadow ] [ bg-light ]">
+    <div class="wrapper">
+      <div class="gallery">
+        <div class="item"><img src="/images/gallery/img-001.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-002.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-003.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-004.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-005.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-006.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-007.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-008.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-009.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-010.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-011.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-012.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-013.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-014.jpeg" alt=""></div>
+        {# <div class="item"><img src="/images/gallery/img-015.jpeg" alt=""></div> #}
+        <div class="item"><img src="/images/gallery/img-016.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-017.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-018.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-019.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-020.jpeg" alt=""></div>
+        {# <div class="item"><img src="/images/gallery/img-021.jpeg" alt=""></div> #}
+        <div class="item"><img src="/images/gallery/img-022.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-023.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-024.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-025.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-026.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-027.jpeg" alt=""></div>
+        {# <div class="item"><img src="/images/gallery/img-028.jpeg" alt=""></div> #}
+        <div class="item"><img src="/images/gallery/img-029.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-030.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-031.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-032.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-033.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-034.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-035.jpeg" alt=""></div>
+        <div class="item"><img src="/images/gallery/img-036.jpeg" alt=""></div>
+      </div>
+    </div>
   </div>
 {% endblock %}

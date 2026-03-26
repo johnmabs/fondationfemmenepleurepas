@@ -1,0 +1,52 @@
+.button {
+  border-radius: 1.75rem;
+
+  display: inline-block;
+  padding: 0.75rem 2.75rem;
+  background: get-color('secondary');
+  color: get-color('light');
+  /* border: 2px solid; */
+  text-transform: none;
+  text-decoration: none;
+  text-align: center;
+
+  @include apply-utility('font', 'sans');
+  @include apply-utility('weight', 'normal');
+
+  transition: .3s ease-in-out;
+
+  // Make sure hover state trumps all variants with a good ol’ important
+  &:hover {
+    background: get-color('secondary-glare') !important;
+    color: get-color('light-shade') !important;
+  }
+
+  // Add a ghost modifier
+  &[data-variant='ghost'] {
+    background: transparent;
+    color: get-color('primary');
+    outline: 2px solid get-color('primary');
+    outline-offset: -2px;
+  }
+
+  &[data-variant='ghost']:hover {
+    background: transparent !important;
+    color: get-color('dark') !important;
+    outline: 2px solid get-color('dark');
+    outline-offset: -2px;
+  }
+
+  &[data-variant='outline'] {
+    background: transparent;
+    color: get-color('light');
+    outline: 2px solid get-color('light');
+    outline-offset: -2px;
+  }
+
+  &[data-variant='outline']:hover {
+    background: transparent !important;
+    color: get-color('light') !important;
+    outline: 2px solid get-color('light-glare');
+    outline-offset: -2px;
+  }
+}

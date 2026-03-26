@@ -1,12 +1,172 @@
 {% extends "layouts/base.njk" %}
+{% set pageCriticalStyles = ['home.scss'] %}
 {% block content %}
-  <section class="hero">
-    <div class="hero__header">
-      <h1 class="hero__heading">{{ hero.heading }}</h1>
-    </div>
+  {% include "partials/hero.njk" %}
 
-    <div class="hero__content flow">
-      <p class="hero__summary">{{ hero.summary }}</p>
+  <section class="mission section">
+    <div class="wrapper">
+      <div class="grid" data-layout='halves'>
+        <div>
+          <img class="height-auto radius-12" src="/images/charity.jpg" alt="">
+        </div>
+
+        <div class="content flow">
+          <h2 class="text-800">Nos valeurs</h2>
+          <p>
+          Nous croyons qu’aucune personne ne devrait affronter la vie seule. Notre mission est d’accompagner les personnes vulnérables à retrouver leur dignité, leur autonomie et leur espoir.
+        </p>
+          <div class="mission__list">
+            <div class="mission__block">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <p>Soutien aux orphelins</p>
+            </div>
+            <div class="mission__block">
+              <i class="fa-solid fa-people-group"></i>
+              <p>Autonomisation des femmes</p>
+            </div>
+            <div class="mission__block">
+              <i class="fa-solid fa-hands-holding"></i>
+              <p>Aide aux veuves</p>
+            </div>
+            <div class="mission__block">
+              <i class="fa-solid fa-heart"></i>
+              <p>Accompagnement social</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <section class="actions section bg-light">
+    <div class="wrapper flow" data-type="wide">
+
+      <h2 class="text-800 text-center">Nos actions</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card__header bg-secondary color-light">
+            <i class="fa-solid fa-hands-holding"></i>
+            <h3>Soutien aux orphelins</h3>
+          </div>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Aide scolaire</li>
+              <li>Matériel éducatif</li>
+              <li>Accompagnement social</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header bg-light-shade">
+            <i class="fa-solid fa-people-group"></i>
+
+            <h3>Autonomisation des femmes</h3>
+          </div>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Formation professionnelle</li>
+              <li>Accompagnement professionnel</li>
+              <li>Leadership féminin</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header bg-primary-glare color-light">
+            <i class="fa-solid fa-hands-holding"></i>
+            <h3>Aide aux veuves</h3>
+          </div>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Soutien psychologique</li>
+              <li>Assistance sociale</li>
+              <li>Réintégration sociale</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header bg-quaternary-glare">
+            <i class="color-secondary fa-solid fa-heart"></i>
+            <h3>Soutien et assistance aux personnes vulnérables</h3>
+          </div>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Programmes de réinsertion</li>
+              <li>Écoute attentive</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact section bg-impact">
+    <div class="wrapper" data-type="wide">
+      <div class="impact-grid grid">
+        <div class="impact-item">
+          <h3>250+</h3>
+          <p>Femmes accompagnées</p>
+        </div>
+
+        <div class="impact-item">
+          <h3>120</h3>
+          <p>Orphelins soutenus</p>
+        </div>
+
+        <div class="impact-item">
+          <h3>15</h3>
+          <p>Projets communautaires</p>
+        </div>
+
+        <div class="impact-item">
+          <h3>50</h3>
+          <p>Bénévoles engagés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials section bg-light">
+    <div class="wrapper flow">
+
+      <h2 class="text-800 text-center">Ils témoignent</h2>
+
+      <div class="grid" data-layout='halves'>
+        <div class="testimonial">
+          <img src="/images/testimonial-1.jpg" alt="">
+          <div class="testimonial-content">
+            <p>
+          Grâce à la fondation, j’ai pu lancer ma petite activité et subvenir aux besoins de mes enfants.
+          </p>
+            <strong class="author">Aline MALONGA</strong>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img class="height-auto" src="/images/testimonial-2.jpg" alt="">
+          <div class="testimonial-content">
+            <p>
+          Je ne me sentais plus seule. La fondation m’a redonné espoir.
+          </p>
+            <strong class="author">Martine OBA</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="wrapper" data-type="wide">
+      <div class="cta-content">
+        <h2 class="text-700 color-quinary">Vous pouvez changer une vie aujourd'hui.</h2>
+        <div class="cluster">
+          <a href="#" class="button">Faire un don</a>
+          <a href="/contact/" class="button" data-variant="ghost">Devenir bénévole</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}

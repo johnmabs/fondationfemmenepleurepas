@@ -1,0 +1,32 @@
+.card {
+  --flow-space: #{get-size('300')};
+  display: grid;
+  padding: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding-block: get-size('400');
+    padding-inline-start: get-size('500');
+    font-size: get-size('400');
+    font-weight: 400;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .fa-solid {
+      font-size: get-size('500');
+    }
+  }
+
+  &__body {
+    padding: get-size('400') get-size('300');
+    background: get-color('light-glare');
+    font-size: get-size('400');
+  }
+}

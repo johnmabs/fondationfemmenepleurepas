@@ -1,0 +1,15 @@
+.impact {
+  background-color: get-color('impact');
+  color: get-color('light');
+
+  h3 {
+    @include apply-utility('font', 'sans');
+    font-size: get-size('900');
+  }
+}
+
+.impact-grid {
+  padding: 2rem;
+  border-radius: get-size('200');
+  background-color: get-color('secondary');
+}

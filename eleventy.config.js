@@ -14,8 +14,9 @@ export default function (eleventyConfig) {
   eleventyConfig.setOutputDirectory("dist");
 
   // Set directories to pass through to the dist folder
-  /*  eleventyConfig.addPassthroughCopy("src/images"); */
+  eleventyConfig.addPassthroughCopy("src/images/hero-01.jpg");
   eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy({ "src/statics": "./" });
 
   // Plugins
   eleventyConfig.addPlugin(rssPlugin);
