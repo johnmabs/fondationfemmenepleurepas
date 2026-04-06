@@ -1,18 +1,19 @@
 {% extends "layouts/base.njk" %}
 {% set pageCriticalStyles = ['home.scss'] %}
 {% block content %}
+  <script src="/slide.js" defer></script>
   {% include "partials/hero.njk" %}
 
   <section class="mission section">
     <div class="wrapper">
       <div class="grid" data-layout='halves'>
         <div>
-          <img class="height-auto radius-12" src="/images/charity.jpg" alt="">
+          <img class="height-auto radius-12" src="/images/charity.jpeg" alt="">
         </div>
 
         <div class="content flow">
-          <h2 class="text-800">Nos valeurs</h2>
-          <p>
+          <h2 class="text-700 md:text-800 text-center">Nos valeurs</h2>
+          <p class="text-center">
           Nous croyons qu’aucune personne ne devrait affronter la vie seule. Notre mission est d’accompagner les personnes vulnérables à retrouver leur dignité, leur autonomie et leur espoir.
         </p>
           <div class="mission__list">
@@ -59,7 +60,7 @@
         </div>
 
         <div class="card">
-          <div class="card__header bg-light-shade">
+          <div class="card__header bg-tertiary color-light">
             <i class="fa-solid fa-people-group"></i>
 
             <h3>Autonomisation des femmes</h3>
@@ -74,7 +75,7 @@
         </div>
 
         <div class="card">
-          <div class="card__header bg-primary-glare color-light">
+          <div class="card__header bg-secondary color-light">
             <i class="fa-solid fa-hands-holding"></i>
             <h3>Aide aux veuves</h3>
           </div>
@@ -88,8 +89,8 @@
         </div>
 
         <div class="card">
-          <div class="card__header bg-quaternary-glare">
-            <i class="color-secondary fa-solid fa-heart"></i>
+          <div class="card__header bg-tertiary color-light">
+            <i class="color-light fa-solid fa-heart"></i>
             <h3>Soutien et assistance aux personnes vulnérables</h3>
           </div>
           <div class="card__body">
@@ -107,22 +108,22 @@
     <div class="wrapper" data-type="wide">
       <div class="impact-grid grid">
         <div class="impact-item">
-          <h3>250+</h3>
+          <h3>350+</h3>
           <p>Femmes accompagnées</p>
         </div>
 
         <div class="impact-item">
-          <h3>120</h3>
+          <h3>220</h3>
           <p>Orphelins soutenus</p>
         </div>
 
         <div class="impact-item">
-          <h3>15</h3>
+          <h3>115</h3>
           <p>Projets communautaires</p>
         </div>
 
         <div class="impact-item">
-          <h3>50</h3>
+          <h3>150</h3>
           <p>Bénévoles engagés</p>
         </div>
       </div>
@@ -136,21 +137,21 @@
 
       <div class="grid" data-layout='halves'>
         <div class="testimonial">
-          <img src="/images/testimonial-1.jpg" alt="">
-          <div class="testimonial-content">
+          <img src="/images/boukaka_allegresse.jpeg" alt="">
+          <div class="testimonial-content flow">
             <p>
-          Grâce à la fondation, j’ai pu lancer ma petite activité et subvenir aux besoins de mes enfants.
+          Je ne suis plus seul, car la fondation m'a aidé dans mes études, ce qui a amélioré mon avenir.
           </p>
-            <strong class="author">Aline MALONGA</strong>
+            <strong class="author">BOUKAKA ALLEGRESSE</strong>
           </div>
         </div>
         <div class="testimonial">
-          <img class="height-auto" src="/images/testimonial-2.jpg" alt="">
-          <div class="testimonial-content">
+          <img class="height-auto" src="/images/kiama_maxime.jpeg" alt="">
+          <div class="testimonial-content flow">
             <p>
-          Je ne me sentais plus seule. La fondation m’a redonné espoir.
+          La fondation m’a redonné espoir.
           </p>
-            <strong class="author">Martine OBA</strong>
+            <strong class="author">KIAMA MAXIME</strong>
           </div>
         </div>
       </div>
@@ -160,7 +161,7 @@
   <section class="cta section">
     <div class="wrapper" data-type="wide">
       <div class="cta-content">
-        <h2 class="text-700 color-quinary">Vous pouvez changer une vie aujourd'hui.</h2>
+        <h2 class="text-700 color-secondary text-center">Vous pouvez changer une vie aujourd'hui.</h2>
         <div class="cluster">
           <a href="#" class="button">Faire un don</a>
           <a href="/contact/" class="button" data-variant="ghost">Devenir bénévole</a>

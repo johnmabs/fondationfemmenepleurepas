@@ -1,12 +1,16 @@
 <section class="hero">
   <div class="overlay"></div>
-  <div class="wrapper flow">
-    <div class="hero__header">
-      <h1 class="hero__heading">{{ hero.heading | safe }}</h1>
-    </div>
+  <div class="slides">
+    <img class="slide active" src="/images/hero-01.jpg" alt="">
+    <img class="slide" src="/images/gallery/img-3.jpeg" alt="">
+    <img class="slide" src="/images/gallery/img-20.jpeg" alt="">
+    <img class="slide" src="/images/gallery/img-24.jpeg" alt="">
+  </div>
+  <div class="content">
+    <div class="content__inner flow">
+      <h1>{{ hero.heading | safe }}</h1>
 
-    <div class="hero__content flow">
-      <p class="hero__summary">{{ hero.summary }}</p>
+      <p>{{ hero.summary }}</p>
 
       <div class="cluster">
         <a href="#" class="button">Faire un don</a>

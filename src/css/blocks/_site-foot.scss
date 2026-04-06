@@ -1,6 +1,6 @@
 .site-footer {
-  padding-block: clamp(2rem, 7vh, 3rem);
-  background-color: #4c9736;
+  padding-block: 1rem;
+  /*   background-color: #4c9736; */
   color: get-color('dark');
 
   .footer-columns {
@@ -39,8 +39,8 @@
 
   .footer-bottom {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0.25rem;
     border-top: 1px solid #444;
-    margin-top: 20px;
+    margin-top: 0.25rem;
   }
 }

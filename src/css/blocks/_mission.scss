@@ -2,6 +2,10 @@
 
   --gutter: #{get-size('600')};
 
+  img {
+    border: 3px solid get-color('secondary');
+  }
+
   &__list {
     display: flex;
     flex-direction: column;

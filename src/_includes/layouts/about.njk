@@ -2,32 +2,33 @@
 {% set pageCriticalStyles = ['about.scss'] %}
 {% block content %}
   <section class="about-hero">
+    <div class="overlay"></div>
     <div class="wrapper">
-      <div class="page-heading color-primary">
+      <div class="page-heading color-light">
         <div class="flow">
-          <h1 class="text-800">À propos de la Fondation</h1>
-          <p>À La Fondation Femme Ne Pleure Pas, nous sommes guidées par trois principes puissants : l’unité, l’amour et le soutien.</p>
+          <h1 class="text-700 md:text-800">À propos de la Fondation</h1>
+          <p class="center-text text-center">À La Fondation Femme Ne Pleure Pas, nous sommes guidées par trois principes puissants : l’unité, l’amour et le soutien.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- QUI NOUS SOMMES -->
-  <section class="section">
+  <section class="section about-us">
     <div class="wrapper">
       <div class="grid" data-layout='halves'>
         <div class="flow">
-          <h2 class="text-700">Qui nous sommes</h2>
-          <p>
+          <h2 class="text-700 text-center">Qui nous sommes</h2>
+          <p class="text-center">
           La Fondation Femme Ne Pleure Pas est une organisation à but non lucratif engagée dans le soutien et l'accompagnement des personnes vulnérables. Nous travaillons à construire une communauté plus solidaire où chacun peut accéder à l’éducation, aux ressources et à l’accompagnement nécessaires pour bâtir un avenir meilleur.
         </p>
 
-          <p>
+          <p class="text-center">
           À travers nos initiatives sociales, nos programmes éducatifs et nos actions humanitaires, nous aidons les personnes dans le besoin à retrouver dignité, confiance et autonomie.
         </p>
         </div>
         <div>
-          <img class="height-auto radius-12" src="/images/hero.jpg" alt="Fondation Femme Ne Pleure Pas">
+          <img class="height-auto radius-12" src="/images/georgette-okemba.jpeg" alt="Fondation Femme Ne Pleure Pas">
         </div>
       </div>
     </div>
@@ -36,49 +37,57 @@
   <!-- NOTRE MISSION -->
   <section class="mission">
     <div class="wrapper flow">
-      <h2 class="text-700">Notre mission</h2>
-      <p class="center-text">
+      <h2 class="text-700 text-center">Notre mission</h2>
+      <p class="center-text text-center">
         Notre mission est de soutenir et d’accompagner les personnes vulnérables afin qu’elles puissent construire un avenir meilleur.
       </p>
 
       <div class="grid" data-layout='thirds'>
-        <div class="mission-card flow">
-          <h3 class="text-600">Soutenir</h3>
-          <p>
+        <div class="card">
+          <div class="card__header bg-secondary color-light">
+            <h3 class="text-600">Soutenir</h3>
+          </div>
+          <div class="card__body">
+            <p>
             Apporter une aide concrète aux orphelins et aux personnes vulnérables.
           </p>
+          </div>
         </div>
 
-        <div class="mission-card flow">
-          <h3 class="text-600">Autonomiser</h3>
-          <p>
+        <div class="card">
+          <div class="card__header bg-tertiary color-light">
+            <h3 class="text-600">Autonomiser</h3>
+          </div>
+          <div class="card__body">
+            <p>
             Encourager l’indépendance et le développement socio-professionnel.
           </p>
+          </div>
         </div>
 
-        <div class="mission-card flow">
-          <h3 class="text-600">Sensibiliser</h3>
-          <p>
+        <div class="card">
+          <div class="card__header bg-secondary color-light">
+            <h3 class="text-600">Sensibiliser</h3>
+          </div>
+          <div class="card__body">
+            <p>
             Informer et mobiliser les communautés autour des enjeux sociaux.
           </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- NOTRE HISTOIRE -->
-  <section class="section">
+  <section class="section about-us">
     <div class="wrapper flow">
-      <h2 class="text-700">Notre histoire</h2>
-      <p>
-      La Fondation Femme Ne Pleure Pas est née d’une idée simple mais
-      puissante : apporter espoir et soutien à ceux qui en ont le plus
-      besoin. Fondée par un groupe de personnes engagées, la fondation a vu
-      le jour pour répondre aux difficultés rencontrées par les orphelins,
-      les jeunes femmes et les personnes vulnérables dans notre communauté.
+      <h2 class="text-700 text-center">Notre histoire</h2>
+      <p class="center-text text-center">
+      La Fondation Femme Ne Pleure Pas est née en 2022 d’une idée simple mais puissante : apporter espoir et soutien à ceux qui en ont le plus besoin. Fondée par un groupe de personnes engagées, la fondation a vu le jour pour répondre aux difficultés rencontrées par les orphelins, les jeunes femmes et les personnes vulnérables dans notre communauté.
       </p>
 
-      <p>
+      <p class="center-text text-center">
       Au fil des années, nous avons développé des initiatives visant à
       améliorer les conditions de vie des personnes en difficulté grâce à
       l’éducation, au soutien social et aux actions humanitaires.
@@ -87,69 +96,84 @@
   </section>
 
   <!-- NOS VALEURS -->
-  <section class="values">
+  <section class="values about-us">
     <div class="wrapper flow">
-      <h2 class="text-700">Nos valeurs</h2>
+      <h2 class="text-700 text-center">Nos valeurs</h2>
       <div class="grid" data-layout='thirds'>
-        <div class="value-card flow">
-          <h3 class="text-600">Unité</h3>
-          <p>
+        <div class="card">
+
+          <div class="card__header bg-secondary color-light">
+            <h3 class="text-600">Unité</h3>
+          </div>
+          <div class="card__body">
+            <p class="center-text">
             Nous croyons que le changement durable est possible lorsque les communautés travaillent ensemble.
           </p>
+          </div>
         </div>
 
-        <div class="value-card flow">
-          <h3 class="text-600">Amour</h3>
-          <p>
+        <div class="card">
+          <div class="card__header bg-tertiary color-light">
+            <h3 class="text-600">Amour</h3>
+          </div>
+          <div class="card__body">
+            <p>
             La compassion et l’empathie guident chacune de nos actions.
           </p>
+          </div>
         </div>
 
-        <div class="value-card flow">
-          <h3 class="text-600">Soutien</h3>
-          <p>
+        <div class="card">
+          <div class="card__header bg-secondary color-light">
+            <h3 class="text-600">Soutien</h3>
+          </div>
+          <div class="card__body">
+            <p>
             Nous fournissons les ressources et l’encouragement nécessaires aux personnes dans le besoin.
           </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- NOS ACTIONS -->
-  <section class="section">
+  <section class="section about-us">
     <div class="wrapper">
 
       <div class="flow">
-        <h2 class="text-700">Nos initiatives</h2>
+        <h2 class="text-700 text-center">Nos initiatives</h2>
 
         <p></p>
 
-        <ul class="flow">
-          <li>Programmes de soutien aux orphelins et aux personnes vulnérables</li>
-          <li>Campagnes de sensibilisation communautaire</li>
-          <li>Organisation de conférences et ateliers éducatifs</li>
-          <li>Actions humanitaires et initiatives sociales</li>
-          <li>Émission média</li>
-        </ul>
+        <div class="center-text">
+          <ul class="flow">
+            <li>Programmes de soutien aux orphelins et aux personnes vulnérables</li>
+            <li>Campagnes de sensibilisation communautaire</li>
+            <li>Organisation de conférences et ateliers éducatifs</li>
+            <li>Actions humanitaires et initiatives sociales</li>
+            <li>Émission média</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- BENEVOLES -->
-  <section class="section text-center bg-light">
+  <section class="section about-us">
     <div class="wrapper flow">
-      <h2 class="text-700">Nos bénévoles</h2>
-      <p>
+      <h2 class="text-700 text-center">Nos bénévoles</h2>
+      <p class="center-text text-center">
         Nos bénévoles jouent un rôle essentiel dans la réalisation de notre mission. Leur engagement, leur compassion et leur volonté d’aider permettent à la fondation de toucher davantage de vies et d’apporter un soutien concret aux personnes dans le besoin.
       </p>
     </div>
   </section>
 
   <!-- CALL TO ACTION -->
-  <section class="about-cta">
-    <div class="wrapper flow">
+  <section class="about-cta bg-light-grey">
+    <div class="wrapper flow text-center">
       <h2 class="text-700 color-quinary">Rejoignez notre mission</h2>
-      <p class="text-500 color-primary">
+      <p class="text-500 color-primary text-center center-text">
       Ensemble, nous pouvons faire une différence et construire un avenir
       meilleur pour ceux qui en ont le plus besoin.
       </p>

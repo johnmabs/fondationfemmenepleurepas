@@ -1,30 +1,29 @@
 {% extends "layouts/base.njk" %}
 {% set pageCriticalStyles = ['contact.scss'] %}
 {% block content %}
-  <section class="contact-hero section">
-    <div class="wrapper">
-      <div class="flow color-primary">
-        <h1 class="text-800">Contactez-nous</h1>
-        <p>
-       L’unité nous rassemble en tant que communauté, l’amour alimente notre passion pour aider les autres et le soutien est au cœur de tout ce que nous faisons. Au fil des années, nous sommes devenus une organisation à but non lucratif dynamique, dédiée à l'autonomisation par l'éducation et les actions humanitaires.
+  <article class="contact-hero section">
+    <div class="overlay"></div>
+    <div class="wrapper flow color-light">
+      <h1 class="text-700 md:text-800 text-center">Contactez-nous</h1>
+      <p class="center-text text-center">
+        L’unité nous rassemble en tant que communauté, l’amour alimente notre passion pour aider les autres et le soutien est au cœur de tout ce que nous faisons. Au fil des années, nous sommes devenus une organisation à but non lucratif dynamique, dédiée à l'autonomisation par l'éducation et les actions humanitaires.
       </p>
-      </div>
     </div>
-  </section>
-  <section class="contact-info section ">
-    <div class="wrapper flow">
+  </article>
 
+  <section class="contact-info section bg-light-grey">
+    <div class="wrapper flow">
       <div class="grid" data-layout='halves'>
-        <div class="info bg-light-shade">
-          <h2 class="text-700">Nos coordonnées</h2>
+        <div class="info flow">
+          <h2 class="text-600 md:text-700">Nos coordonnées</h2>
           <p>
             <i class="fa-solid fa-location-dot"></i> Brazzaville, République du Congo</p>
           <p>
-            <i class="fa-solid fa-phone"></i> +242 XX XX XX XX</p>
+            <i class="fa-solid fa-phone"></i> +242 06 691 1459</p>
           <p>
-            <i class="fa-solid fa-envelope"></i> contact@fondationfemmenepleurepas.org</p>
-          <p>
-            <i class="fa-solid fa-clock"></i> Lundi – Vendredi : 09h00 – 17h00</p>
+            <i class="fa-solid fa-envelope"></i> contact.femmenepleurepas@gmail.com</p>
+          {#           <p>
+            <i class="fa-solid fa-clock"></i> Lundi – Vendredi : 09h00 – 17h00</p> #}
         </div>
         <div>
           <div class="map-container">
@@ -43,7 +42,7 @@
 
   </section>
 
-  <section class="section bg-quaternary">
+  <section class="section bg-light-grey">
     <div class="wrapper">
       <form class="contact-form">
         <div class="form-group">

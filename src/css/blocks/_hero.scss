@@ -1,51 +1,82 @@
 .hero {
   position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: url("../images/hero-01.jpg") center/cover no-repeat;
+  /* background: url("../images/hero-01.jpg") center/cover no-repeat; */
+  background: #000;
+  overflow: hidden;
+  height: auto;
 
-  color: get-color('light');
+  @include media-query('md') {
+    height: 70vh;
+  }
 
-  padding-block: 3.5rem;
+  .slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
-  &__heading {
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .slide.active {
+    opacity: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+  }
+
+  .content__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content h1 {
+    color: get-color('light');
     font-size: get-size('700');
 
     >span {
       color: get-color('secondary-glare');
     }
-  }
 
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  @include media-query('md') {
-    padding-block: 8rem;
-
-    &__header {
+    @include media-query('md') {
       max-width: 720px;
       margin-inline: auto;
-    }
 
-    &__heading {
       font-size: get-size('900');
 
       >span {
         color: get-color('secondary-glare');
       }
     }
+  }
 
-    &__content {
-      max-width: 720px;
-      margin-inline: auto;
-    }
-
-    &__summary {
-      font-size: get-size('500');
-    }
+  .content p {
+    color: get-color('light');
+    max-width: 720px;
+    margin-inline: auto;
+    font-size: get-size('500');
   }
 }
