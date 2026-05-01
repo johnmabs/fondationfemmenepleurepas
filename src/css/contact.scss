@@ -33,14 +33,6 @@ $generate-utility-classes: false;
   --gutter: 1rem;
 }
 
-.contact-info h2 {
-  margin-bottom: 15px;
-}
-
-.contact-info p {
-  margin-bottom: 10px;
-}
-
 .contact-info .info {
   display: flex;
   flex-direction: column;
@@ -49,6 +41,24 @@ $generate-utility-classes: false;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 12px;
+  border: 2px solid get-color('secondary');
+  font-weight: bold;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.fa-solid {
+  font-size: get-size('300');
+
+  @include media-query('md') {
+    font-size: get-size('400');
+  }
 }
 
 .info-item {
@@ -83,7 +93,7 @@ select:focus {
 }
 
 button {
-  background: get-color('secondary-shade');
+  background: get-color('tertiary');
   color: white;
   border: none;
   padding: 14px;
@@ -94,10 +104,11 @@ button {
 }
 
 button:hover {
-  background: get-color('quinary-shade');
+  background: get-color('tertiary-glare');
 }
 
 .map-container {
+  border: 2px solid get-color('secondary');
   margin: auto;
   border-radius: 12px;
   overflow: hidden;

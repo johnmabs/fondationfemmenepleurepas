@@ -14,8 +14,8 @@ let page = 0;
 let loading = false;
 let currentIndex = 0;
 
-/* Local images list (edit this) */
-const TOTAL_IMAGES = 56; // number of images in folder
+/* Local images list */
+const TOTAL_IMAGES = 20; // number of images in folder
 const IMAGES = Array.from(
   { length: TOTAL_IMAGES },
   (_, i) => `/images/gallery/img-${i + 1}.jpeg`,

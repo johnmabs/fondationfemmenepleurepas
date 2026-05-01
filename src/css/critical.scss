@@ -47,7 +47,7 @@ h4 {
 // High contrast selection because it can help visually-impaired
 // folks read the text easier
 ::selection {
-  color: get-color('secondary');
+  color: get-color('tertiary-glare');
 
   // We set this as an RGBA because that’s how you get a solid color, by using 0.99
   // alpha value. Browsers are wild.
@@ -90,3 +90,6 @@ h4 {
 @import 'utilities/text-justify';
 @import 'utilities/text-center';
 @import 'utilities/center-text';
+@import 'utilities/text-left';
+@import 'utilities/items-center';
+@import 'utilities/hidden';

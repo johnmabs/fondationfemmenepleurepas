@@ -1,0 +1,11 @@
+.text-left {
+  text-align: left;
+}
+
+.md\:text-left {
+  text-align: center;
+
+  @include media-query('md') {
+    text-align: left;
+  }
+}

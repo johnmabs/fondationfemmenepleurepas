@@ -20,6 +20,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
   }
@@ -58,7 +59,7 @@
     font-size: get-size('700');
 
     >span {
-      color: get-color('secondary-glare');
+      color: get-color('secondary');
     }
 
     @include media-query('md') {
@@ -66,10 +67,6 @@
       margin-inline: auto;
 
       font-size: get-size('900');
-
-      >span {
-        color: get-color('secondary-glare');
-      }
     }
   }
 
