@@ -2,7 +2,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "production": "NODE_ENV=production npm run build"
+    "production": "node -e \"process.env.NODE_ENV='production'; import('./node_modules/@11ty/eleventy/cmd.cjs')\""
   },
   "type": "module",
   "dependencies": {
